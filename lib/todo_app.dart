@@ -7,12 +7,13 @@ class TodoApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'To do',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(
+            seedColor: const Color.fromARGB(255, 7, 24, 36)),
         useMaterial3: true,
       ),
-      home: const HomePage(title: 'Flutter Demo Home Page'),
+      home: const HomePage(title: 'Flutter To do'),
     );
   }
 }

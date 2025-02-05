@@ -19,6 +19,7 @@ class _HomePageState extends State<HomePage> {
   void sendNameUser() {
     String name = textController1.text.trim();
     if (name.isEmpty) {
+      ScaffoldMessenger.of(context).clearSnackBars();
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text('Por favor, insira um nome válido.'),
